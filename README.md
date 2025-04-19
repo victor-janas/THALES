@@ -1,6 +1,7 @@
 # **Prerequisites**:
 It is necessary to generate a pair of SSH keys before running the docker and place them in the ssh-keys folder. To do this, you can use the command:
 - $ ssh-keygen -t rsa -f ssh-keys/id_rsa -N ''
+- $ chmod 600 ssh-keys/id_rsa
 
 # **Launching**
 To be able to launch the docker you must execute the following commands:
