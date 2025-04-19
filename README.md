@@ -14,5 +14,7 @@ To verify operation:
 - check the SSH connection on port 2222 via : $ ssh -i ssh-keys/id_rsa -p 2222 ansible@localhost
 - check ANSIBLE Deployment : $ sudo docker logs nomdudossier_ansible_controller_1
 
+GITHUB : https://github.com/victor-janas/THALES/
+
 I hope that the project will suit you and we can move on!
 
