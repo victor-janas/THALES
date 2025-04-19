@@ -12,7 +12,7 @@ To be able to launch the docker you must execute the following commands:
 To verify operation:
 - check the NGINX server from http://localhost:8080 or via : $ curl -I http://localhost:8080
 - check the SSH connection on port 2222 via : $ ssh -i ssh-keys/id_rsa -p 2222 ansible@localhost
-- check ANSIBLE Deployment : $ docker logs nomdudossier_ansible_controller_1
+- check ANSIBLE Deployment : $ sudp docker logs nomdudossier_ansible_controller_1
 
 I hope that the project will suit you and we can move on!
 
