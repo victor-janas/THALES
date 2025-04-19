@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  ssh_server:
+    build:
+     context: .
+     dockerfile: ssh-server/Dockerfile
+    hostname: ssh_server
+    ports:
+      - "2222:22"
+      - "8080:80"
+    networks:
+      - infra_net
+
+  ansible_controller:
+    build:
+     context: .
+     dockerfile: ansible-controller/Dockerfile
+    hostname: ansible_controller
+    networks:
+      - infra_net
+    depends_on:
+      - ssh_server
+    command: ansible-playbook -i inventory.ini playbook.yml
+
+networks:
+  infra_net:
+    driver: bridge
+    attachable: true
