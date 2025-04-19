@@ -4,8 +4,8 @@ $ ssh-keygen -t rsa -f ssh-keys/id_rsa -N ''
 
 To be able to launch the docker you must execute the following commands:
 
-$ docker-compose build
-$ docker-compose up
+$ sudo docker-compose build
+$ sudo docker-compose up
 
 To verify operation:
 - check the NGINX server from http://localhost:8080 or via : $ curl -I http://localhost:8080
